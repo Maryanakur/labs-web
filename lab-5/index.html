@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelLife — Туристический блог</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <strong>TravelLife</strong>
+                <span>Больше, чем путешествия</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Страны</a></li>
+                    <li><a href="#">Маршруты</a></li>
+                    <li><a href="#">Советы</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form class="search-form">
+                    <input type="search" placeholder="Поиск по блогу...">
+                </form>
+                <button class="btn btn-primary">Войти</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Герой-секция (главный баннер) -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Открывай мир вместе с нами</h1>
+                <p>Путешествия вдохновляют, расширяют горизонты и делают жизнь ярче. Делимся маршрутами, советами и личными историями из разных уголков планеты.</p>
+                <a href="#" class="btn btn-large">Найти свое путешествие &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Контейнер для двухколоночной сетки (статьи + боковая панель) -->
+        <div class="container layout">
+            
+            <!-- Левая колонка со статьями и советами -->
+            <div class="main-content">
+                <section class="popular-articles">
+                    <h2>Популярные статьи</h2>
+                    <div class="articles-grid">
+                        
+                        <!-- Карточка статьи 1 -->
+                        <article class="card">
+                            <figure>
+                                <img src="images/italy.jpg" alt="Побережье Италии">
+                                <figcaption class="tag">Европа</figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <h3>Идеальные выходные в Италии</h3>
+                                <p>Маршрут по живописным городам, вкусная кухня и атмосфера настоящей Европы.</p>
+                                <div class="card-meta">
+                                    <time datetime="2025-05-12">12 мая 2025</time>
+                                    <span class="views">1.2K</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Карточка статьи 2 -->
+                        <article class="card">
+                            <figure>
+                                <img src="images/iceland.jpg" alt="Природа Исландии">
+                                <figcaption class="tag">Азия</figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <h3>Невероятная природа Исландии</h3>
+                                <p>Вулканы, водопады и северное сияние — путешествие, которое останется в сердце.</p>
+                                <div class="card-meta">
+                                    <time datetime="2025-05-03">3 мая 2025</time>
+                                    <span class="views">980</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Карточка статьи 3 -->
+                        <article class="card">
+                            <figure>
+                                <img src="images/thailand.jpg" alt="Храм в Таиланде">
+                                <figcaption class="tag">Азия</figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <h3>Что нужно знать перед поездкой в Таиланд</h3>
+                                <p>Виза, бюджет, особенности культуры и полезные лайфхаки.</p>
+                                <div class="card-meta">
+                                    <time datetime="2025-04-28">28 апреля 2025</time>
+                                    <span class="views">1.5K</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section class="useful-tips">
+                    <h2>Полезные советы</h2>
+                    <div class="tips-grid">
+                        <article class="tip-card">
+                            <h4>Как спланировать путешествие</h4>
+                            <p>Пошаговый гид от идеи до возвращения домой.</p>
+                            <a href="#" class="read-more">Читать &rarr;</a>
+                        </article>
+                        <article class="tip-card">
+                            <h4>Как сэкономить в поездке</h4>
+                            <p>Рабочие способы путешествовать больше и дешевле.</p>
+                            <a href="#" class="read-more">Читать &rarr;</a>
+                        </article>
+                        <article class="tip-card">
+                            <h4>Безопасность в путешествиях</h4>
+                            <p>Как избежать неприятностей и быть готовым ко всему.</p>
+                            <a href="#" class="read-more">Читать &rarr;</a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Правая колонка (боковая панель) -->
+            <aside class="sidebar">
+                
+                <section class="widget categories">
+                    <h3>Категории</h3>
+                    <ul>
+                        <li><a href="#">Европа</a> <span>48</span></li>
+                        <li><a href="#">Азия</a> <span>35</span></li>
+                        <li><a href="#">Америка</a> <span>27</span></li>
+                        <li><a href="#">Африка</a> <span>18</span></li>
+                        <li><a href="#">Океания</a> <span>12</span></li>
+                    </ul>
+                </section>
+
+                <section class="widget subscription">
+                    <h3>Подпишитесь на обновления</h3>
+                    <p>Получайте новые статьи, маршруты и полезные советы на email.</p>
+                    <form action="#" class="sub-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </section>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand">
+                <strong>TravelLife</strong>
+                <p>Больше, чем путешествия</p>
+                <p>&copy; 2026 TravelLife. Все права защищены.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Страны</a></li>
+                    <li><a href="#">Маршруты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col links">
+                <h4>Путешественникам</h4>
+                <ul>
+                    <li><a href="#">Полезные ссылки</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contacts">
+                <h4>Контакты</h4>
+                <address>
+                    <p>г. Москва, ул. Путешественников, д. 10</p>
+                    <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><a href="mailto:info@travellife.ru">info@travellife.ru</a></p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
